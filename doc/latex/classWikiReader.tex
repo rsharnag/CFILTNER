@@ -1,0 +1,117 @@
+\hypertarget{classWikiReader}{\section{\-Wiki\-Reader \-Class \-Reference}
+\label{classWikiReader}\index{\-Wiki\-Reader@{\-Wiki\-Reader}}
+}
+
+
+{\ttfamily \#include $<$\-Wiki\-Reader.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWikiReader_adae7240efba1d5f9f34dbbacbdcd8a34}{\-Wiki\-Reader} (const char $\ast$)
+\item 
+\hyperlink{classPage}{\-Page} \hyperlink{classWikiReader_a88fd381907b52b7a01d5f021194d8ad0}{get\-Next\-Doc} ()
+\item 
+\hyperlink{classWikiReader_a8eaa9794fce7a2779e466e79e3ac1cc8}{$\sim$\-Wiki\-Reader} ()
+\item 
+bool \hyperlink{classWikiReader_ad7d92cde84e8515a67a189e652e5ae5c}{is\-E\-O\-F} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ifstream \hyperlink{classWikiReader_a37829cc72dad2f2ca2e67088b6dafdf8}{wiki\-File}
+\item 
+bool \hyperlink{classWikiReader_a181c24ed7fc81ab83a916eb7f307cf54}{\-E\-N\-D}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 51 of file \-Wiki\-Reader.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classWikiReader_adae7240efba1d5f9f34dbbacbdcd8a34}{\index{\-Wiki\-Reader@{\-Wiki\-Reader}!\-Wiki\-Reader@{\-Wiki\-Reader}}
+\index{\-Wiki\-Reader@{\-Wiki\-Reader}!WikiReader@{\-Wiki\-Reader}}
+\subsubsection[{\-Wiki\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Wiki\-Reader\-::\-Wiki\-Reader} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\-Path}
+\end{DoxyParamCaption}
+)}}\label{classWikiReader_adae7240efba1d5f9f34dbbacbdcd8a34}
+
+
+\-Definition at line 10 of file \-Wiki\-Reader.\-cpp.
+
+\hypertarget{classWikiReader_a8eaa9794fce7a2779e466e79e3ac1cc8}{\index{\-Wiki\-Reader@{\-Wiki\-Reader}!$\sim$\-Wiki\-Reader@{$\sim$\-Wiki\-Reader}}
+\index{$\sim$\-Wiki\-Reader@{$\sim$\-Wiki\-Reader}!WikiReader@{\-Wiki\-Reader}}
+\subsubsection[{$\sim$\-Wiki\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Wiki\-Reader\-::$\sim$\-Wiki\-Reader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWikiReader_a8eaa9794fce7a2779e466e79e3ac1cc8}
+
+
+\-Definition at line 16 of file \-Wiki\-Reader.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classWikiReader_a88fd381907b52b7a01d5f021194d8ad0}{\index{\-Wiki\-Reader@{\-Wiki\-Reader}!get\-Next\-Doc@{get\-Next\-Doc}}
+\index{get\-Next\-Doc@{get\-Next\-Doc}!WikiReader@{\-Wiki\-Reader}}
+\subsubsection[{get\-Next\-Doc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Page} {\bf \-Wiki\-Reader\-::get\-Next\-Doc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWikiReader_a88fd381907b52b7a01d5f021194d8ad0}
+
+
+\-Definition at line 20 of file \-Wiki\-Reader.\-cpp.
+
+
+
+\-References \-Page\-::append\-Line(), and \-Page\-::set\-Title().
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::calculate\-Info\-Wiki().
+
+\hypertarget{classWikiReader_ad7d92cde84e8515a67a189e652e5ae5c}{\index{\-Wiki\-Reader@{\-Wiki\-Reader}!is\-E\-O\-F@{is\-E\-O\-F}}
+\index{is\-E\-O\-F@{is\-E\-O\-F}!WikiReader@{\-Wiki\-Reader}}
+\subsubsection[{is\-E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Wiki\-Reader\-::is\-E\-O\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classWikiReader_ad7d92cde84e8515a67a189e652e5ae5c}
+
+
+\-Definition at line 42 of file \-Wiki\-Reader.\-cpp.
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::calculate\-Info\-Wiki().
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classWikiReader_a181c24ed7fc81ab83a916eb7f307cf54}{\index{\-Wiki\-Reader@{\-Wiki\-Reader}!\-E\-N\-D@{\-E\-N\-D}}
+\index{\-E\-N\-D@{\-E\-N\-D}!WikiReader@{\-Wiki\-Reader}}
+\subsubsection[{\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Wiki\-Reader\-::\-E\-N\-D}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classWikiReader_a181c24ed7fc81ab83a916eb7f307cf54}
+
+
+\-Definition at line 54 of file \-Wiki\-Reader.\-h.
+
+\hypertarget{classWikiReader_a37829cc72dad2f2ca2e67088b6dafdf8}{\index{\-Wiki\-Reader@{\-Wiki\-Reader}!wiki\-File@{wiki\-File}}
+\index{wiki\-File@{wiki\-File}!WikiReader@{\-Wiki\-Reader}}
+\subsubsection[{wiki\-File}]{\setlength{\rightskip}{0pt plus 5cm}ifstream {\bf \-Wiki\-Reader\-::wiki\-File}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classWikiReader_a37829cc72dad2f2ca2e67088b6dafdf8}
+
+
+\-Definition at line 53 of file \-Wiki\-Reader.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Residual\-I\-D\-F/\hyperlink{WikiReader_8h}{\-Wiki\-Reader.\-h}\item 
+src/\-Residual\-I\-D\-F/\hyperlink{WikiReader_8cpp}{\-Wiki\-Reader.\-cpp}\end{DoxyCompactItemize}

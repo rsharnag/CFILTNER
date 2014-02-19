@@ -1,0 +1,222 @@
+\hypertarget{classInfoIDF}{\section{\-Info\-I\-D\-F \-Class \-Reference}
+\label{classInfoIDF}\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}}
+}
+
+
+{\ttfamily \#include $<$\-Info\-I\-D\-F.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInfoIDF_a30af5f2242c80104a7e1c1256b885b63}{\-Info\-I\-D\-F} ()
+\item 
+\hyperlink{classInfoIDF}{\-Info\-I\-D\-F} \hyperlink{classInfoIDF_a199f501db7a955add27cd829fb497ae9}{incr\-D\-F} ()
+\item 
+\hyperlink{classInfoIDF}{\-Info\-I\-D\-F} \hyperlink{classInfoIDF_ad5e50d4e6b79a4d0f4fb3ecfb1d6e5cb}{incr\-C\-F} ()
+\item 
+void \hyperlink{classInfoIDF_a079b208b94e48ea1c7fd6c6c108654fa}{calculate\-Expected\-I\-D\-F} (int total\-Docs)
+\item 
+int \hyperlink{classInfoIDF_a74f5057f7e24af5115f27467a44e0cd0}{get\-Cf} () const 
+\item 
+int \hyperlink{classInfoIDF_a5cceafbda3b8ff43cb8ed31bf2a8b190}{get\-Df} () const 
+\item 
+double \hyperlink{classInfoIDF_a1069a5221aa5028627cb3f9d21a4b228}{get\-Expected\-Idf} () const 
+\end{DoxyCompactItemize}
+\subsection*{\-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classInfoIDF_a73b64360314c93df2622667f71a1b9f3}{cf}
+\item 
+int \hyperlink{classInfoIDF_aa3e5edea9863b659979314128757dfbb}{df}
+\item 
+double \hyperlink{classInfoIDF_a46e58e37974cf8598229a7e5bdc63e50}{expected\-I\-D\-F}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 11 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classInfoIDF_a30af5f2242c80104a7e1c1256b885b63}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!\-Info\-I\-D\-F@{\-Info\-I\-D\-F}}
+\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{\-Info\-I\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Info\-I\-D\-F\-::\-Info\-I\-D\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classInfoIDF_a30af5f2242c80104a7e1c1256b885b63}
+
+
+\-Definition at line 9 of file \-Info\-I\-D\-F.\-cpp.
+
+
+
+\-References cf, df, and expected\-I\-D\-F.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classInfoIDF_a079b208b94e48ea1c7fd6c6c108654fa}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!calculate\-Expected\-I\-D\-F@{calculate\-Expected\-I\-D\-F}}
+\index{calculate\-Expected\-I\-D\-F@{calculate\-Expected\-I\-D\-F}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{calculate\-Expected\-I\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Info\-I\-D\-F\-::calculate\-Expected\-I\-D\-F} (
+\begin{DoxyParamCaption}
+\item[{int}]{total\-Docs}
+\end{DoxyParamCaption}
+)}}\label{classInfoIDF_a079b208b94e48ea1c7fd6c6c108654fa}
+\-Directly calculates the expected \-I\-D\-F of each word \begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+as per poisson distribution lambda$^\wedge$k e$^\wedge$(-\/lambda)/k! (mean)$^\wedge$0 = 1 
+
+\-Definition at line 27 of file \-Info\-I\-D\-F.\-cpp.
+
+
+
+\-References cf, and expected\-I\-D\-F.
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::print\-Sorted\-I\-D\-Fs().
+
+\hypertarget{classInfoIDF_a74f5057f7e24af5115f27467a44e0cd0}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!get\-Cf@{get\-Cf}}
+\index{get\-Cf@{get\-Cf}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{get\-Cf}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Info\-I\-D\-F\-::get\-Cf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classInfoIDF_a74f5057f7e24af5115f27467a44e0cd0}
+
+
+\-Definition at line 37 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\-References cf.
+
+\hypertarget{classInfoIDF_a5cceafbda3b8ff43cb8ed31bf2a8b190}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!get\-Df@{get\-Df}}
+\index{get\-Df@{get\-Df}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{get\-Df}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Info\-I\-D\-F\-::get\-Df} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classInfoIDF_a5cceafbda3b8ff43cb8ed31bf2a8b190}
+
+
+\-Definition at line 41 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\-References df.
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::print\-Sorted\-I\-D\-Fs().
+
+\hypertarget{classInfoIDF_a1069a5221aa5028627cb3f9d21a4b228}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!get\-Expected\-Idf@{get\-Expected\-Idf}}
+\index{get\-Expected\-Idf@{get\-Expected\-Idf}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{get\-Expected\-Idf}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Info\-I\-D\-F\-::get\-Expected\-Idf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classInfoIDF_a1069a5221aa5028627cb3f9d21a4b228}
+
+
+\-Definition at line 45 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\-References expected\-I\-D\-F.
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::print\-Sorted\-I\-D\-Fs().
+
+\hypertarget{classInfoIDF_ad5e50d4e6b79a4d0f4fb3ecfb1d6e5cb}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!incr\-C\-F@{incr\-C\-F}}
+\index{incr\-C\-F@{incr\-C\-F}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{incr\-C\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Info\-I\-D\-F} {\bf \-Info\-I\-D\-F\-::incr\-C\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classInfoIDF_ad5e50d4e6b79a4d0f4fb3ecfb1d6e5cb}
+\-Increments the \-Frequency of word \begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+
+
+\-Definition at line 21 of file \-Info\-I\-D\-F.\-cpp.
+
+
+
+\-References cf.
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::calculate\-Info(), and \-Residual\-I\-D\-F\-::calculate\-Info\-Wiki().
+
+\hypertarget{classInfoIDF_a199f501db7a955add27cd829fb497ae9}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!incr\-D\-F@{incr\-D\-F}}
+\index{incr\-D\-F@{incr\-D\-F}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{incr\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Info\-I\-D\-F} {\bf \-Info\-I\-D\-F\-::incr\-D\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classInfoIDF_a199f501db7a955add27cd829fb497ae9}
+\-Increments the document \-Frequency \begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+
+
+\-Definition at line 14 of file \-Info\-I\-D\-F.\-cpp.
+
+
+
+\-References df.
+
+
+
+\-Referenced by \-Residual\-I\-D\-F\-::calculate\-Info(), and \-Residual\-I\-D\-F\-::calculate\-Info\-Wiki().
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classInfoIDF_a73b64360314c93df2622667f71a1b9f3}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!cf@{cf}}
+\index{cf@{cf}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{cf}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Info\-I\-D\-F\-::cf}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classInfoIDF_a73b64360314c93df2622667f71a1b9f3}
+
+
+\-Definition at line 13 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\-Referenced by calculate\-Expected\-I\-D\-F(), get\-Cf(), incr\-C\-F(), and \-Info\-I\-D\-F().
+
+\hypertarget{classInfoIDF_aa3e5edea9863b659979314128757dfbb}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!df@{df}}
+\index{df@{df}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{df}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Info\-I\-D\-F\-::df}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classInfoIDF_aa3e5edea9863b659979314128757dfbb}
+
+
+\-Definition at line 14 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\-Referenced by get\-Df(), incr\-D\-F(), and \-Info\-I\-D\-F().
+
+\hypertarget{classInfoIDF_a46e58e37974cf8598229a7e5bdc63e50}{\index{\-Info\-I\-D\-F@{\-Info\-I\-D\-F}!expected\-I\-D\-F@{expected\-I\-D\-F}}
+\index{expected\-I\-D\-F@{expected\-I\-D\-F}!InfoIDF@{\-Info\-I\-D\-F}}
+\subsubsection[{expected\-I\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Info\-I\-D\-F\-::expected\-I\-D\-F}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classInfoIDF_a46e58e37974cf8598229a7e5bdc63e50}
+
+
+\-Definition at line 16 of file \-Info\-I\-D\-F.\-h.
+
+
+
+\-Referenced by calculate\-Expected\-I\-D\-F(), get\-Expected\-Idf(), and \-Info\-I\-D\-F().
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Residual\-I\-D\-F/\hyperlink{InfoIDF_8h}{\-Info\-I\-D\-F.\-h}\item 
+src/\-Residual\-I\-D\-F/\hyperlink{InfoIDF_8cpp}{\-Info\-I\-D\-F.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{classResidualIDF}{\section{\-Residual\-I\-D\-F \-Class \-Reference}
+\label{classResidualIDF}\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}}
+}
+
+
+{\ttfamily \#include $<$\-Residual\-I\-D\-F.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classResidualIDF_aeea185a8e06834b01a71cd2dab21ddbb}{\-Residual\-I\-D\-F} ()
+\item 
+void \hyperlink{classResidualIDF_a3de6f0772d6e2468e2efdf7c34a7e8dc}{calculate\-Info} (string dir)
+\item 
+void \hyperlink{classResidualIDF_af925c5cd70bb796241b22e6f55ac287a}{calculate\-Info\-Wiki} (const char $\ast$wiki\-Path)
+\item 
+void \hyperlink{classResidualIDF_a796dba5d0496a8da17b8783aab45efc2}{print\-Sorted\-I\-D\-Fs} (ofstream \&out)
+\end{DoxyCompactItemize}
+\subsection*{\-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, double $>$ \hyperlink{classResidualIDF_a079156a1a77c0a5278399a55fb6e57bc}{word\-Map}
+\item 
+map$<$ string, \hyperlink{classInfoIDF}{\-Info\-I\-D\-F} $>$ \hyperlink{classResidualIDF_aeb4512a5c664c4163b1f35d98357e583}{word\-Vals}
+\item 
+int \hyperlink{classResidualIDF_abf955a0231682be307c0c7eca6c52828}{total\-Docs}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 20 of file \-Residual\-I\-D\-F.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classResidualIDF_aeea185a8e06834b01a71cd2dab21ddbb}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}}
+\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{\-Residual\-I\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Residual\-I\-D\-F\-::\-Residual\-I\-D\-F} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classResidualIDF_aeea185a8e06834b01a71cd2dab21ddbb}
+\-Constructor for \-Residual \-I\-D\-F class 
+
+\-Definition at line 29 of file \-Residual\-I\-D\-F.\-h.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classResidualIDF_a3de6f0772d6e2468e2efdf7c34a7e8dc}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!calculate\-Info@{calculate\-Info}}
+\index{calculate\-Info@{calculate\-Info}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{calculate\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Residual\-I\-D\-F\-::calculate\-Info} (
+\begin{DoxyParamCaption}
+\item[{string}]{dir}
+\end{DoxyParamCaption}
+)}}\label{classResidualIDF_a3de6f0772d6e2468e2efdf7c34a7e8dc}
+\-Calculates \-I\-D\-F info for the documents in the specified directory 
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em dir} & directory path to docs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+
+
+\-Definition at line 44 of file \-Residual\-I\-D\-F.\-cpp.
+
+
+
+\-References \-Info\-I\-D\-F\-::incr\-C\-F(), and \-Info\-I\-D\-F\-::incr\-D\-F().
+
+\hypertarget{classResidualIDF_af925c5cd70bb796241b22e6f55ac287a}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!calculate\-Info\-Wiki@{calculate\-Info\-Wiki}}
+\index{calculate\-Info\-Wiki@{calculate\-Info\-Wiki}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{calculate\-Info\-Wiki}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Residual\-I\-D\-F\-::calculate\-Info\-Wiki} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{wiki\-Path}
+\end{DoxyParamCaption}
+)}}\label{classResidualIDF_af925c5cd70bb796241b22e6f55ac287a}
+\-Calculates \-I\-D\-F info for the wiki text 
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em dir} & \-Path to wiki text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+
+\end{DoxyReturn}
+
+
+\-Definition at line 11 of file \-Residual\-I\-D\-F.\-cpp.
+
+
+
+\-References \-Page\-::get\-Lines(), \-Wiki\-Reader\-::get\-Next\-Doc(), \-Info\-I\-D\-F\-::incr\-C\-F(), \-Info\-I\-D\-F\-::incr\-D\-F(), and \-Wiki\-Reader\-::is\-E\-O\-F().
+
+
+
+\-Referenced by main().
+
+\hypertarget{classResidualIDF_a796dba5d0496a8da17b8783aab45efc2}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!print\-Sorted\-I\-D\-Fs@{print\-Sorted\-I\-D\-Fs}}
+\index{print\-Sorted\-I\-D\-Fs@{print\-Sorted\-I\-D\-Fs}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{print\-Sorted\-I\-D\-Fs}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Residual\-I\-D\-F\-::print\-Sorted\-I\-D\-Fs} (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{out}
+\end{DoxyParamCaption}
+)}}\label{classResidualIDF_a796dba5d0496a8da17b8783aab45efc2}
+
+
+\-Definition at line 104 of file \-Residual\-I\-D\-F.\-cpp.
+
+
+
+\-References \-Info\-I\-D\-F\-::calculate\-Expected\-I\-D\-F(), \-Info\-I\-D\-F\-::get\-Df(), \-Info\-I\-D\-F\-::get\-Expected\-Idf(), and map\-Comp().
+
+
+
+\-Referenced by main().
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classResidualIDF_abf955a0231682be307c0c7eca6c52828}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!total\-Docs@{total\-Docs}}
+\index{total\-Docs@{total\-Docs}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{total\-Docs}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Residual\-I\-D\-F\-::total\-Docs}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classResidualIDF_abf955a0231682be307c0c7eca6c52828}
+
+
+\-Definition at line 24 of file \-Residual\-I\-D\-F.\-h.
+
+\hypertarget{classResidualIDF_a079156a1a77c0a5278399a55fb6e57bc}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!word\-Map@{word\-Map}}
+\index{word\-Map@{word\-Map}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{word\-Map}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,double$>$ {\bf \-Residual\-I\-D\-F\-::word\-Map}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classResidualIDF_a079156a1a77c0a5278399a55fb6e57bc}
+
+
+\-Definition at line 22 of file \-Residual\-I\-D\-F.\-h.
+
+\hypertarget{classResidualIDF_aeb4512a5c664c4163b1f35d98357e583}{\index{\-Residual\-I\-D\-F@{\-Residual\-I\-D\-F}!word\-Vals@{word\-Vals}}
+\index{word\-Vals@{word\-Vals}!ResidualIDF@{\-Residual\-I\-D\-F}}
+\subsubsection[{word\-Vals}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,{\bf \-Info\-I\-D\-F}$>$ {\bf \-Residual\-I\-D\-F\-::word\-Vals}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classResidualIDF_aeb4512a5c664c4163b1f35d98357e583}
+
+
+\-Definition at line 23 of file \-Residual\-I\-D\-F.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Residual\-I\-D\-F/\hyperlink{ResidualIDF_8h}{\-Residual\-I\-D\-F.\-h}\item 
+src/\-Residual\-I\-D\-F/\hyperlink{ResidualIDF_8cpp}{\-Residual\-I\-D\-F.\-cpp}\end{DoxyCompactItemize}

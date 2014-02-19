@@ -1,0 +1,34 @@
+/*
+ * Statistics.cpp
+ *
+ *  Created on: 18-Feb-2014
+ *      Author: cfilt
+ */
+
+#include "Statistics.h"
+using namespace std;
+namespace fs = boost::filesystem;
+/**
+ * Constructor for unsupervised statistics
+Statistics::Statistics(string dir) {
+	// TODO Auto-generated constructor stub
+	fs::path full_path(fs::initial_path<fs::path>());
+	full_path = fs::system_complete(fs::path(dir));
+	if (!fs::exists(full_path)) {
+		cerr << "\nPath not found: " << full_path.string();
+		return;
+	}
+	if (fs::is_directory(full_path)) {
+		cout << "Processing directory:" << full_path.string() << "\n";
+		fs::directory_iterator dir_end;
+		for (fs::directory_iterator dir_itr(full_path); dir_itr != dir_end;
+				++dir_itr) {
+
+		}
+	}
+}
+
+Statistics::~Statistics() {
+	// TODO Auto-generated destructor stub
+}
+
